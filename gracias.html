@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gracias por tu compra</title>
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '2665966983803274');
+fbq('track', 'PageView');
+
+fbq('track', 'Purchase', {
+  value: 300000,
+  currency: 'ARS'
+});
+</script>
+
+<style>
+body {
+margin:0;
+font-family: 'Segoe UI', sans-serif;
+background-image:url('fondito.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.container {
+background:rgba(255,255,255,0.95);
+padding:30px;
+border-radius:20px;
+text-align:center;
+max-width:520px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+h1 {
+color:#e91e63;
+margin-bottom:15px;
+}
+
+p {
+color:#444;
+margin-bottom:20px;
+}
+
+.video-btn {
+display:inline-block;
+padding:15px 25px;
+background:#e91e63;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.video-btn:hover {
+background:#d81b60;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>💖 ¡Felicitaciones!</h1>
+
+<p>
+Tu compra fue confirmada correctamente 🙌<br><br>
+Ahora mirá esta clase para empezar con todo desde el día uno ✨
+</p>
+
+<a href="https://youtu.be/z-4ml2cekhI" target="_blank" class="video-btn">
+Ver clase de orientación
+</a>
+
+</div>
+
+</body>
+</html>
